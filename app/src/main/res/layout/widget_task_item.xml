@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/widget_task_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:layout_margin="6dp"
+    android:background="@drawable/widget_task_item_background">
+
+    <TextView
+        android:id="@+id/widget_task_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/blue_900"
+        android:textSize="14sp"
+        tools:text="Nome da Tarefa" />
+
+    <TextView
+        android:id="@+id/widget_task_datetime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/blue_700"
+        android:textSize="12sp"
+        tools:text="25/07 15:30" />
+</LinearLayout>

@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">W-List</string>
+    <string name="form_button_save">Salvar</string>
+    <string name="toast_fill_all_fields">Por favor, preencha todos os campos.</string>
+    <string name="toast_fill_required_fields">Por favor, preencha os campos obrigatórios (*)</string>
+
+    <string name="home_welcome_title">O que você deseja gerenciar?</string>
+    <string name="home_button_tasks">Lista de Tarefas</string>
+    <string name="home_button_shopping">Lista de Compras</string>
+
+    <string name="tasks_list_title">Lista de Tarefas</string>
+    <string name="empty_list_message">Nenhum item na lista.\nClique no botão + para adicionar.</string>
+    <string name="snackbar_task_removed">Tarefa removida</string>
+    <string name="snackbar_action_undo">Desfazer</string>
+    <string name="toast_task_saved">Tarefa salva com sucesso!</string>
+    <string name="toast_task_edited">Tarefa editada com sucesso!</string>
+    <string name="toast_task_removed">Tarefa removida com sucesso!</string>
+
+    <string name="task_form_title">Detalhes da Tarefa</string>
+    <string name="task_name_hint">Nome da Tarefa</string>
+    <string name="task_description_hint">Descrição</string>
+    <string name="task_datetime_hint">Data e Hora</string>
+    <string name="task_form_button_delete">Remover Tarefa</string>
+    <string name="dialog_delete_task_title">Remover Tarefa</string>
+
+    <string name="header_overdue">Atrasadas</string>
+    <string name="header_today">Hoje</string>
+    <string name="header_tomorrow">Amanhã</string>
+    <string name="header_this_week">Esta semana</string>
+    <string name="header_this_month">Este Mês</string>
+    <string name="header_next_months">Próximos meses</string>
+    <string name="header_completed">Concluídas</string>
+
+    <string name="toast_notification_permission_denied">As notificações foram desativadas. Você não receberá lembretes para suas tarefas.</string>
+    <string name="toast_could_not_schedule_reminder">Não foi possível agendar o lembrete.</string>
+
+    <string name="notification_text">%1$s às %2$s</string>
+    <string name="notification_action_done">Concluir</string>
+    <string name="notification_action_snooze">Adiar 10 min</string>
+
+    <string name="shopping_list_title">Lista de Compras</string>
+    <string name="shopping_total_label">Total da Compra</string>
+    <string name="snackbar_item_removed">Item removido</string>
+    <string name="share_title_shopping">Minha Lista de Compras:</string>
+    <string name="toast_empty_list">A lista está vazia.</string>
+    <string name="quantity_and_price_format">%1$d x %2$s</string>
+    <string name="category_uncategorized">Outros</string>
+
+    <string name="shopping_form_title">Detalhes do Item</string>
+    <string name="product_name_hint">Nome do Produto *</string>
+    <string name="product_category_hint">Categoria (ex: Hortifruti)</string>
+    <string name="product_quantity_hint">Quantidade *</string>
+    <string name="product_price_hint">Preço Unitário (R$)</string>
+    <string name="shopping_form_button_delete">Remover Item</string>
+    <string name="dialog_delete_shopping_title">Remover Item</string>
+    <string name="toast_item_saved">Item salvo com sucesso!</string>
+    <string name="toast_item_edited">Item editado com sucesso!</string>
+    <string name="toast_item_removed">Item removido com sucesso!</string>
+
+    <string name="dialog_delete_message">Tem certeza de que deseja remover \'%1$s\'?</string>
+    <string name="dialog_button_yes">Sim</string>
+    <string name="dialog_button_no">Não</string>
+
+    <string name="settings_title">Configurações</string>
+    <string name="settings_category_general">Geral</string>
+    <string name="settings_language_title">Idioma</string>
+    <string name="settings_dark_mode_title">Tema Escuro</string>
+
+    <string name="notification_channel_name">Lembretes de Tarefas</string>
+    <string name="notification_title">Lembrete de Tarefa</string>
+    <string name="notification_default_text">Você tem uma tarefa pendente</string>
+
+    <string name="search_tasks_hint">Buscar tarefas…</string>
+    <string name="search_items_hint">Buscar produtos…</string>
+
+    <string name="menu_action_search">Buscar</string>
+    <string name="menu_action_share">Compartilhar</string>
+
+    <string name="widget_empty_text">Nenhuma tarefa pendente.</string>
+    <string name="widget_description">Veja suas próximas tarefas</string>
+</resources>

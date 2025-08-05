@@ -1,0 +1,26 @@
+<resources>
+    <string-array name="language_entries">
+        <item>System Default</item>
+        <item>Português</item>
+        <item>English</item>
+        <item>Español</item>
+    </string-array>
+    <string-array name="language_values">
+        <item>system</item>
+        <item>pt</item>
+        <item>en</item>
+        <item>es</item>
+    </string-array>
+
+    <string-array name="dark_mode_entries">
+        <item>System Default</item>
+        <item>Light</item>
+        <item>Dark</item>
+    </string-array>
+
+    <string-array name="dark_mode_values">
+        <item>system</item>
+        <item>light</item>
+        <item>dark</item>
+    </string-array>
+</resources>

@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">W-List</string>
+    <string name="form_button_save">Save</string>
+    <string name="toast_fill_all_fields">Please fill in all fields.</string>
+    <string name="toast_fill_required_fields">Please fill in the required fields (*)</string>
+
+    <string name="home_welcome_title">What do you want to manage?</string>
+    <string name="home_button_tasks">To-Do List</string>
+    <string name="home_button_shopping">Shopping List</string>
+
+    <string name="tasks_list_title">To-Do List</string>
+    <string name="empty_list_message">No items in the list.\nClick the + button to add.</string>
+    <string name="snackbar_task_removed">Task removed</string>
+    <string name="snackbar_action_undo">Undo</string>
+    <string name="toast_task_saved">Task saved successfully!</string>
+    <string name="toast_task_edited">Task edited successfully!</string>
+    <string name="toast_task_removed">Task removed successfully!</string>
+
+    <string name="task_form_title">Task Details</string>
+    <string name="task_name_hint">Task Name</string>
+    <string name="task_description_hint">Description</string>
+    <string name="task_datetime_hint">Date and Time</string>
+    <string name="task_form_button_delete">Remove Task</string>
+    <string name="dialog_delete_task_title">Remove Task</string>
+
+    <string name="header_overdue">Overdue</string>
+    <string name="header_today">Today</string>
+    <string name="header_tomorrow">Tomorrow</string>
+    <string name="header_this_week">This week</string>
+    <string name="header_this_month">This month</string>
+    <string name="header_next_months">Next months</string>
+    <string name="header_completed">Completed</string>
+
+    <string name="toast_notification_permission_denied">Notifications disabled. You will not receive reminders for your tasks.</string>
+    <string name="toast_could_not_schedule_reminder">Could not schedule reminder.</string>
+
+    <string name="notification_text">%1$s at %2$s</string>
+    <string name="notification_action_done">Done</string>
+    <string name="notification_action_snooze">Snooze 10 min</string>
+
+    <string name="shopping_list_title">Shopping List</string>
+    <string name="shopping_total_label">Total Purchase</string>
+    <string name="snackbar_item_removed">Item removed</string>
+    <string name="share_title_shopping">My Shopping List:</string>
+    <string name="toast_empty_list">The list is empty.</string>
+    <string name="quantity_and_price_format">%1$d x %2$s</string>
+    <string name="category_uncategorized">Uncategorized</string>
+
+    <string name="shopping_form_title">Item Details</string>
+    <string name="product_name_hint">Product Name *</string>
+    <string name="product_category_hint">Category (e.g., Produce)</string>
+    <string name="product_quantity_hint">Quantity *</string>
+    <string name="product_price_hint">Unit Price ($)</string>
+    <string name="shopping_form_button_delete">Remove Item</string>
+    <string name="dialog_delete_shopping_title">Remove Item</string>
+    <string name="toast_item_saved">Item saved successfully!</string>
+    <string name="toast_item_edited">Item edited successfully!</string>
+    <string name="toast_item_removed">Item removed successfully!</string>
+
+    <string name="dialog_delete_message">Are you sure you want to remove \'%1$s\'?</string>
+    <string name="dialog_button_yes">Yes</string>
+    <string name="dialog_button_no">No</string>
+
+    <string name="settings_title">Settings</string>
+    <string name="settings_category_general">General</string>
+    <string name="settings_language_title">Language</string>
+    <string name="settings_dark_mode_title">Dark Mode</string>
+
+    <string name="notification_channel_name">Task Reminders</string>
+    <string name="notification_title">Task Reminder</string>
+    <string name="notification_default_text">You have a pending task</string>
+
+    <string name="search_tasks_hint">Search tasks…</string>
+    <string name="search_items_hint">Search products…</string>
+
+    <string name="menu_action_search">Search</string>
+    <string name="menu_action_share">Share</string>
+
+    <string name="widget_empty_text">No pending tasks.</string>
+    <string name="widget_description">See your upcoming tasks</string>
+</resources>
