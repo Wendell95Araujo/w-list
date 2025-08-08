@@ -18,7 +18,7 @@
 <a name="-w-list-gerenciador-de-tarefas-e-compras-pt-br"></a>
 # W-List: Gerenciador de Tarefas e Compras
 
-W-List é um aplicativo Android nativo, construído com Kotlin, projetado para ser um assistente pessoal simples, mas poderoso, para gerenciar duas das listas mais comuns do dia a dia: tarefas e compras. O projeto foi desenvolvido seguindo as melhores práticas e a arquitetura moderna do Android, servindo como um portfólio completo que demonstra desde a criação de UI até funcionalidades avançadas do sistema.
+W-List é um aplicativo Android nativo, construído com Kotlin, projetado para ser um assistente pessoal simples, mas poderoso, para gerenciar duas das listas mais comuns do dia a dia: tarefas e compras. O projeto foi desenvolvido seguindo as melhores práticas e a arquitetura moderna do Android, servindo como um portfólio completo que demonstra desde a criação de UI até funcionalidades avançadas do sistema. O aplicativo está disponível em **Português, Inglês e Espanhol**.
 
 ## Screenshots
 
@@ -106,20 +106,18 @@ O W-List foi construído com um foco em usabilidade e funcionalidades inteligent
 
 Este projeto foi uma oportunidade para explorar e implementar a arquitetura Android moderna.
 
--   **Linguagem:** **Kotlin** 100%, utilizando recursos como **Coroutines** e **Flow** para um código assíncrono, limpo e eficiente.
+-   **Linguagem:** **Kotlin** 100%, utilizando recursos como **Coroutines** para um código assíncrono, limpo e eficiente.
 -   **Arquitetura:**
     -   **Padrão de Repositório:** Abstrai as fontes de dados da lógica de negócios.
-    -   **`ViewModel` (MVVM):** Gerencia o estado da UI e sobrevive a mudanças de configuração.
-    -   **`LiveData`/`Flow`:** Permite a criação de uma UI reativa que observa mudanças nos dados.
 -   **Persistência de Dados:**
     -   **Room Database:** A biblioteca de persistência recomendada pelo Google, usada como a única fonte da verdade para todos os dados do aplicativo.
 -   **Interface do Usuário (UI):**
-    -   **Material Design 3:** Componentes modernos (`MaterialToolbar`, `FloatingActionButton`, etc.) para uma UI consistente.
+    -   **Material Design:** Componentes modernos (`MaterialToolbar`, `FloatingActionButton`, etc.) para uma UI consistente.
     -   **`RecyclerView`:** Utilizado para exibir listas de forma eficiente, com suporte a múltiplos tipos de `View` (para cabeçalhos), `DiffUtil` para atualizações animadas e `ItemTouchHelper` para gestos de deslizar e arrastar.
 -   **Dependências Principais:**
     -   **Android Jetpack:**
         -   Room
-        -   Lifecycle (ViewModel, LiveData, `lifecycleScope`)
+        -   Lifecycle (`lifecycleScope`)
         -   Preference KTX (para a tela de configurações)
     -   **Coroutines** para gerenciamento de threads.
     -   **`RecyclerViewSwipeDecorator`** para customizar a UI dos gestos de deslize.
@@ -146,14 +144,68 @@ Este projeto foi uma jornada completa pelo ecossistema de desenvolvimento Androi
 
 <!-- 
 =====================================================================
-======================== VERSÃO EM INGLÊS ========================
+======================== ENGLISH VERSION ========================
 =====================================================================
 -->
 
 <a name="-w-list-task-and-shopping-manager-en-us"></a>
 # W-List: Task and Shopping Manager
 
-W-List is a native Android application, built with Kotlin, designed to be a simple yet powerful personal assistant for managing two of the most common everyday lists: to-dos and shopping. The project was developed following modern Android architecture and best practices, serving as a comprehensive portfolio that showcases everything from UI creation to advanced system features.
+W-List is a native Android application, built with Kotlin, designed to be a simple yet powerful personal assistant for managing two of the most common everyday lists: to-dos and shopping. The project was developed following modern Android architecture and best practices, serving as a comprehensive portfolio that showcases everything from UI creation to advanced system features. The app is available in **Portuguese, English, and Spanish**.
+
+## Screenshots
+
+W-List features a clean and consistent interface with full support for the system's light and dark themes.
+
+<table>
+  <tr>
+    <td colspan="2" align="center" width="800"><b>Home Screen</b></td>
+  </tr>
+  <tr>
+    <td align="center" width="400">
+      <img src="screenshots/home-light.jpg" alt="Home Screen - Light Theme" height="300"/>
+    </td>
+    <td align="center" width="400">
+      <img src="screenshots/home-dark.jpg" alt="Home Screen - Dark Theme" height="300"/>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2" align="center" width="800"><b>To-Do List</b></td>
+  </tr>
+  <tr>
+    <td align="center" width="400">
+      <img src="screenshots/tasks-light.jpg" alt="To-Do List - Light Theme" height="300"/>
+    </td>
+    <td align="center" width="400">
+      <img src="screenshots/tasks-dark.jpg" alt="To-Do List - Dark Theme" height="300"/>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2" align="center" width="800"><b>Shopping List</b></td>
+  </tr>
+  <tr>
+    <td align="center" width="400">
+      <img src="screenshots/shopping-light.jpg" alt="Shopping List - Light Theme" height="300"/>
+    </td>
+    <td align="center" width="400">
+      <img src="screenshots/shopping-dark.jpg" alt="Shopping List - Dark Theme" height="300"/>
+    </td>
+  </tr>
+  
+  <tr>
+    <td colspan="2" align="center" width="800"><b>Home Screen Widget</b></td>
+  </tr>
+  <tr>
+    <td align="center" width="400">
+      <img src="screenshots/widget-light.jpg" alt="Widget - Light Theme" height="300"/>
+    </td>
+    <td align="center" width="400">
+      <img src="screenshots/widget-dark.jpg" alt="Widget - Dark Theme" height="300"/>
+    </td>
+  </tr>
+</table>
 
 ## Key Features
 
@@ -187,36 +239,91 @@ W-List was built with a focus on usability and smart features:
 
 This project was an opportunity to explore and implement modern Android architecture.
 
--   **Language:** 100% **Kotlin**, utilizing features like **Coroutines** and **Flow** for clean, efficient, and asynchronous code.
+-   **Language:** 100% **Kotlin**, utilizing features like **Coroutines** for clean, efficient, and asynchronous code.
 -   **Architecture:**
     -   **Repository Pattern:** Abstracts data sources from the business logic.
-    -   **`ViewModel` (MVVM):** Manages UI-related data and survives configuration changes.
-    -   **`LiveData`/`Flow`:** Enables the creation of a reactive UI that observes data changes.
 -   **Data Persistence:**
     -   **Room Database:** Google's recommended persistence library, used as the single source of truth for all application data.
 -   **User Interface (UI):**
-    -   **Material Design 3:** Modern components (`MaterialToolbar`, `FloatingActionButton`, etc.) for a consistent UI.
+    -   **Material Design:** Modern components (`MaterialToolbar`, `FloatingActionButton`, etc.) for a consistent UI.
     -   **`RecyclerView`:** Used to efficiently display lists, with support for multiple `View` types (for headers), `DiffUtil` for animated updates, and `ItemTouchHelper` for swipe and drag gestures.
 -   **Key Dependencies:**
     -   **Android Jetpack:**
         -   Room
-        -   Lifecycle (ViewModel, LiveData, `lifecycleScope`)
+        -   Lifecycle (`lifecycleScope`)
         -   Preference KTX (for the settings screen)
     -   **Coroutines** for thread management.
     -   **`RecyclerViewSwipeDecorator`** to customize the UI of swipe gestures.
+
+---
+*This project was developed as an in-depth study of native Android development with Kotlin.*
 
 <br><br><br>
 
 <!-- 
 =====================================================================
-======================= VERSÃO EM ESPANHOL =======================
+======================= SPANISH VERSION =======================
 =====================================================================
 -->
 
 <a name="-w-list-gestor-de-tareas-y-compras-es-es"></a>
 # W-List: Gestor de Tareas y Compras
 
-W-List es una aplicación nativa de Android, construida con Kotlin, diseñada para ser un asistente personal simple pero potente para gestionar dos de las listas más comunes del día a día: tareas y compras. El proyecto fue desarrollado siguiendo las mejores prácticas y la arquitectura moderna de Android, sirviendo como un portafolio completo que demuestra desde la creación de UI hasta funcionalidades avanzadas del sistema.
+W-List es una aplicación nativa de Android, construida con Kotlin, diseñada para ser un asistente personal simple pero potente para gestionar dos de las listas más comunes del día a día: tareas y compras. El proyecto fue desarrollado siguiendo las mejores prácticas y la arquitectura moderna de Android, sirviendo como un portafolio completo que demuestra desde la creación de UI hasta funcionalidades avanzadas del sistema. La aplicación está disponible en **Portugués, Inglés y Español**.
+
+## Capturas de Pantalla
+
+W-List cuenta con una interfaz limpia y consistente, con soporte completo para los temas claro y oscuro del sistema.
+
+<table>
+  <tr>
+    <td colspan="2" align="center" width="800"><b>Pantalla de Inicio</b></td>
+  </tr>
+  <tr>
+    <td align="center" width="400">
+      <img src="screenshots/home-light.jpg" alt="Pantalla de Inicio - Tema Claro" height="300"/>
+    </td>
+    <td align="center" width="400">
+      <img src="screenshots/home-dark.jpg" alt="Pantalla de Inicio - Tema Oscuro" height="300"/>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2" align="center" width="800"><b>Lista de Tareas</b></td>
+  </tr>
+  <tr>
+    <td align="center" width="400">
+      <img src="screenshots/tasks-light.jpg" alt="Lista de Tareas - Tema Claro" height="300"/>
+    </td>
+    <td align="center" width="400">
+      <img src="screenshots/tasks-dark.jpg" alt="Lista de Tareas - Tema Oscuro" height="300"/>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2" align="center" width="800"><b>Lista de Compras</b></td>
+  </tr>
+  <tr>
+    <td align="center" width="400">
+      <img src="screenshots/shopping-light.jpg" alt="Lista de Compras - Tema Claro" height="300"/>
+    </td>
+    <td align="center" width="400">
+      <img src="screenshots/shopping-dark.jpg" alt="Lista de Compras - Tema Oscuro" height="300"/>
+    </td>
+  </tr>
+  
+  <tr>
+    <td colspan="2" align="center" width="800"><b>Widget en la Pantalla de Inicio</b></td>
+  </tr>
+  <tr>
+    <td align="center" width="400">
+      <img src="screenshots/widget-light.jpg" alt="Widget - Tema Claro" height="300"/>
+    </td>
+    <td align="center" width="400">
+      <img src="screenshots/widget-dark.jpg" alt="Widget - Tema Oscuro" height="300"/>
+    </td>
+  </tr>
+</table>
 
 ## Características Principales
 
@@ -250,20 +357,21 @@ W-List fue construido con un enfoque en la usabilidad y funcionalidades intelige
 
 Este proyecto fue una oportunidad para explorar e implementar la arquitectura moderna de Android.
 
--   **Lenguaje:** 100% **Kotlin**, utilizando características como **Coroutines** y **Flow** para un código asíncrono, limpio y eficiente.
+-   **Lenguaje:** 100% **Kotlin**, utilizando características como **Coroutines** para un código asíncrono, limpio y eficiente.
 -   **Arquitectura:**
     -   **Patrón de Repositorio:** Abstrae las fuentes de datos de la lógica de negocio.
-    -   **`ViewModel` (MVVM):** Gestiona los datos relacionados con la UI y sobrevive a los cambios de configuración.
-    -   **`LiveData`/`Flow`:** Permite la creación de una UI reactiva que observa los cambios en los datos.
 -   **Persistencia de Datos:**
     -   **Room Database:** La biblioteca de persistencia recomendada por Google, utilizada como la única fuente de verdad para todos los datos de la aplicación.
 -   **Interfaz de Usuario (UI):**
-    -   **Material Design 3:** Componentes modernos (`MaterialToolbar`, `FloatingActionButton`, etc.) para una UI consistente.
+    -   **Material Design:** Componentes modernos (`MaterialToolbar`, `FloatingActionButton`, etc.) para una UI consistente.
     -   **`RecyclerView`:** Utilizado para mostrar listas de manera eficiente, con soporte para múltiples tipos de `View` (para encabezados), `DiffUtil` para actualizaciones animadas, y `ItemTouchHelper` para gestos de deslizar y arrastrar.
 -   **Dependencias Clave:**
     -   **Android Jetpack:**
         -   Room
-        -   Lifecycle (ViewModel, LiveData, `lifecycleScope`)
+        -   Lifecycle (`lifecycleScope`)
         -   Preference KTX (para la pantalla de configuración)
     -   **Coroutines** para la gestión de hilos.
     -   **`RecyclerViewSwipeDecorator`** para personalizar la UI de los gestos de deslizar.
+
+---
+*Este proyecto fue desarrollado como un estudio a fondo del desarrollo nativo de Android con Kotlin.*
