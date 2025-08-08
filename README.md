@@ -131,11 +131,20 @@ Este projeto foi uma oportunidade para explorar e implementar a arquitetura Andr
 
 ## Aprendizados e Próximos Passos
 
-Este projeto foi uma jornada completa pelo ecossistema de desenvolvimento Android. Os próximos passos para evoluir o W-List poderiam incluir:
+Este projeto foi uma jornada completa pelo ecossistema de desenvolvimento Android, desde a UI básica até a integração com o sistema e a persistência de dados com Room. A arquitetura atual foi projetada para ser escalável, permitindo a adição de novas funcionalidades no futuro.
 
--   [ ] Implementar sub-tarefas dentro de uma tarefa principal.
--   [ ] Adicionar prioridades (Baixa, Média, Alta) às tarefas.
--   [ ] Criar um sistema de login para sincronização de listas na nuvem.
+O roadmap para evoluir o W-List inclui:
+
+-   [ ] **Aprimoramentos de Tarefas:**
+    -   **Sub-tarefas:** Implementar um sistema de checklist dentro de uma tarefa principal.
+    -   **Prioridades:** Adicionar níveis de prioridade (Baixa, Média, Alta) para melhor organização.
+
+-   [ ] **Novos Tipos de Lista:**
+    -   **Lista de Despesas:** Criar um novo módulo para controle financeiro, com campos para valor, data e categoria de despesa, incluindo a visualização de totais e, futuramente, gráficos.
+    -   **Listas de Mídia (Filmes e Jogos):** Integrar com uma **API externa** (como a do The Movie Database - TMDb) para buscar informações, capas e sinopses, transformando o app em um hub de entretenimento.
+
+-   [ ] **Funcionalidades de Nuvem:**
+    -   **Sincronização e Backup:** Criar um sistema de login (ex: com Firebase Authentication) para permitir que os usuários salvem suas listas na nuvem e as acessem de múltiplos dispositivos.
 
 ---
 *Este projeto foi desenvolvido como um estudo aprofundado de desenvolvimento Android nativo com Kotlin.*
@@ -255,6 +264,23 @@ This project was an opportunity to explore and implement modern Android architec
     -   **Coroutines** for thread management.
     -   **`RecyclerViewSwipeDecorator`** to customize the UI of swipe gestures.
 
+## Learnings and Next Steps
+
+This project was a complete journey through the Android development ecosystem. The current architecture was designed to be scalable, allowing for the addition of new features in the future.
+
+The roadmap to evolve W-List includes:
+
+-   [ ] **Task Enhancements:**
+    -   **Sub-tasks:** Implement a checklist system within a main task.
+    -   **Priorities:** Add priority levels (Low, Medium, High) for better organization.
+
+-   [ ] **New List Types:**
+    -   **Expense Tracker:** Create a new module for financial tracking, with fields for amount, date, and expense category, including total summaries and, in the future, charts.
+    -   **Media Lists (Movies & Games):** Integrate with an **external API** (like The Movie Database - TMDb) to fetch information, posters, and synopses, turning the app into an entertainment hub.
+
+-   [ ] **Cloud Features:**
+    -   **Sync & Backup:** Create a login system (e.g., with Firebase Authentication) to allow users to save their lists to the cloud and access them from multiple devices.
+
 ---
 *This project was developed as an in-depth study of native Android development with Kotlin.*
 
@@ -372,6 +398,23 @@ Este proyecto fue una oportunidad para explorar e implementar la arquitectura mo
         -   Preference KTX (para la pantalla de configuración)
     -   **Coroutines** para la gestión de hilos.
     -   **`RecyclerViewSwipeDecorator`** para personalizar la UI de los gestos de deslizar.
+
+## Aprendizajes y Próximos Pasos
+
+Este proyecto fue un viaje completo a través del ecosistema de desarrollo de Android. La arquitectura actual fue diseñada para ser escalable, permitiendo la adición de nuevas funcionalidades en el futuro.
+
+El roadmap para evolucionar W-List incluye:
+
+-   [ ] **Mejoras en las Tareas:**
+    -   **Sub-tareas:** Implementar un sistema de checklist dentro de una tarea principal.
+    -   **Prioridades:** Añadir niveles de prioridad (Baja, Media, Alta) para una mejor organización.
+
+-   [ ] **Nuevos Tipos de Listas:**
+    -   **Lista de Gastos:** Crear un nuevo módulo para el seguimiento financiero, con campos para valor, fecha y categoría de gasto, incluyendo la visualización de totales y, en el futuro, gráficos.
+    -   **Listas de Medios (Películas y Juegos):** Integrar con una **API externa** (como la de The Movie Database - TMDb) para obtener información, carátulas y sinopsis, convirtiendo la app en un centro de entretenimiento.
+
+-   [ ] **Funcionalidades en la Nube:**
+    -   **Sincronización y Respaldo:** Crear un sistema de inicio de sesión (ej: con Firebase Authentication) para permitir a los usuarios guardar sus listas en la nube y acceder a ellas desde múltiples dispositivos.
 
 ---
 *Este proyecto fue desarrollado como un estudio a fondo del desarrollo nativo de Android con Kotlin.*
