@@ -50,7 +50,7 @@ dependencies {
     implementation(libs.gson)
     implementation(libs.androidx.preference.ktx)
     implementation(libs.recyclerview.swipedecorator)
-
+    implementation(libs.androidx.core.splashscreen)
     implementation(libs.androidx.room.runtime)
     ksp(libs.androidx.room.compiler)
     implementation(libs.androidx.room.ktx)

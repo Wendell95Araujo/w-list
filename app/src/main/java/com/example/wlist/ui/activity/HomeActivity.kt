@@ -9,9 +9,14 @@ import com.example.wlist.R
 import android.Manifest
 import android.content.pm.PackageManager
 import android.os.Build
+import android.os.Handler
+import android.os.Looper
+import android.view.View
+import android.view.ViewTreeObserver
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.content.ContextCompat
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 
 class HomeActivity : AppCompatActivity() {
 
@@ -27,9 +32,18 @@ class HomeActivity : AppCompatActivity() {
         }
     }
 
+    private var isDataReady = false
+
     override fun onCreate(savedInstanceState: Bundle?) {
+        installSplashScreen()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
+
+        Handler(Looper.getMainLooper()).postDelayed({
+            isDataReady = true
+        }, 3000)
+
+        setupSplashScreenExitCondition()
 
         findViewById<Button>(R.id.button_tasks).setOnClickListener {
             startActivity(Intent(this, TaskListActivity::class.java))
@@ -44,6 +58,22 @@ class HomeActivity : AppCompatActivity() {
         }
 
         askNotificationPermission()
+    }
+
+    private fun setupSplashScreenExitCondition() {
+        val content: View = findViewById(android.R.id.content)
+        content.viewTreeObserver.addOnPreDrawListener(
+            object : ViewTreeObserver.OnPreDrawListener {
+                override fun onPreDraw(): Boolean {
+                    return if (isDataReady) {
+                        content.viewTreeObserver.removeOnPreDrawListener(this)
+                        true
+                    } else {
+                        false
+                    }
+                }
+            }
+        )
     }
 
     private fun askNotificationPermission() {
